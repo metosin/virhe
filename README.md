@@ -2,9 +2,11 @@
 
 Beautiful Error Message for Clojure/Script.
 
-<img src="https://raw.githubusercontent.com/metosin/virhe/master/docs/img/conflicts2.png"/>
+## Examples
 
-<img src="https://raw.githubusercontent.com/metosin/virhe/master/docs/img/closed-spec1.png"/>
+<img src="https://raw.githubusercontent.com/metosin/virhe/master/docs/img/conflicts2.png" width=600 />
+
+<img src="https://raw.githubusercontent.com/metosin/virhe/master/docs/img/closed-spec1.png" width=600/>
 
 ## License
 
