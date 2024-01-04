@@ -1,0 +1,18 @@
+{:paths ["src" "resources"]
+ :deps {org.clojure/clojure {:mvn/version "1.11.1"}
+        org.clojure/test.check {:mvn/version "1.1.1"}
+        mvxcvi/arrangement {:mvn/version "2.1.0"}
+        fipp/fipp {:mvn/version "0.6.26"}}
+
+ :aliases {:test {:extra-paths ["test"]
+                  :extra-deps {lambdaisland/kaocha {:mvn/version "1.87.1366"}
+                               lambdaisland/kaocha-cljs {:mvn/version "1.5.154"}}}
+           :cljs-test-runner {:extra-deps {olical/cljs-test-runner {:mvn/version "3.8.0"}
+                                           }
+                              :extra-paths ["test" "cljs-test-runner-out/gen"]
+                              :main-opts ["-m" "cljs-test-runner.main" "-d" "test"]}
+           :sci {:extra-deps {org.babashka/sci {:mvn/version "0.8.41"}}}
+           :test-sci {:extra-paths ["test-sci"]
+                      :main-opts ["-m" "cljs-test-runner.main" "-d" "test-sci" "-d" "test"]}
+           }
+ }
